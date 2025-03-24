@@ -5,38 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosso Menu</title>
     <link rel="stylesheet" href="styles.css">
-    <script>let carosseis = document.getElementsByClassName('carossel-Container')
-
-        for(let i = 0; i < carosseis.length; i++){
-          let carossel = carosseis[i]
-          let btnBack = carossel.getElementsByClassName('BtnBack')[0]
-          let btnNext = carossel.getElementsByClassName('BtnNext')[0]
-        
-          let itens = carossel.getElementsByClassName('item')
-          let posicaoAnterior = 0
-          let mover = posicaoAnterior + 100
-        
-          btnNext.addEventListener('click', ()=>{
-            mover = posicaoAnterior + 100
-        
-            for(let c = 0; c < itens.length; c++ ){
-        
-            itens[c].style.right=  mover + '%'
-        
-            posicaoAnterior = mover}
-          })
-        
-          btnBack.addEventListener('click', ()=>{
-            mover = posicaoAnterior - 100
-        
-            for(let c = 0; c < itens.length; c++ ){
-        
-            itens[c].style.right=  mover + '%'
-        
-            posicaoAnterior = mover}
-        
-          })
-        }</script>
+  
 </head>
 <body>
     <header>
@@ -47,7 +16,8 @@
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="menu.html">Menu</a></li>
-        </ul>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>   
     </nav>
 
     <section class="menu">
@@ -62,7 +32,7 @@
 
     
 <!-- ----------------------Carrossel de Imagens----------------------------------------------------- -->
- <section>
+ <section class="galeria">
 <div class="items">
     <div class="item active">
         <img src="images/image3.jpg " width="500" height="500">
@@ -87,6 +57,9 @@
  </section>
 
 
+ <footer>
+    <p>&copy; 2025 Confeitaria Criativa - Todos os direitos reservados.</p>
+</footer>
 
 
 
