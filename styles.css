@@ -180,3 +180,16 @@ color: #9b4922;
     color: white;
     text-align: center;
   }
+
+  .concurso {
+    padding: 5%;
+  }
+
+  button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color:#8B4513;
+    color: #fecf89;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
